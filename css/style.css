@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+body {
+    background-color: aliceblue;
+    font-family: 'Nova Square';
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.content {
+    margin-left: 30%;
+}
+
+#start {
+    margin-top: 60px;
+}
+
+#start h2 {
+    font-size: 40px;
+}
+
+.btn {
+    background-color: rgb(53, 0, 139);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Nova Square';
+}
+
+.btn:hover {
+    background-color:rgb(148, 11, 202)
+}
+
+.hidden {
+   display: none;
+}
+
+#quiz {
+    margin-top: 60px;
+    font-size: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

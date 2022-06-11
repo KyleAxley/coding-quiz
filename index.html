@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Code-Quiz</title>
+</head>
+<body>
+    <div class="container"> 
+        <a href="#" id="viewHighScore">View High Scores</a>
+        <div id="timer">Time left: <span id="time">1:00</span> </div>
+    </div>
+    <div class="content" id="content">
+        <div id="start">
+            <h2>Coding Quiz</h2>
+            <p>Test your JavaScript knowledge with these 8 questions on Javascript fundamentals.</p>
+            <button class="btn" id="start-btn">Start Quiz</button>
+        </div>
+        <div id="quiz" class="hidden">
+            <p id="question"></p>
+            <button class="btn" id="answer1" onclick="submitAnswer(this)"></button>
+            <button class="btn" id="answer2" onclick="submitAnswer(this)"></button>
+            <button class="btn" id="answer3" onclick="submitAnswer(this)"></button>
+        </div>
+        <div id="results" class="hidden">
+            <p id="resultsText"></p> 
+            <div id="initialInput" class="hidden">
+                <form action="">
+                    <p>Enter your initials:</p>
+                    <input type="text" id="initials">
+                    <button type="submit" class="btn" id="submitInitialsBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="highScoreSection" class="hidden">
+            <h2>High Scores</h2>  
+            <div id="listOfHighScores"></div>
+            <p>
+                <button type="submit" class="btn" id="goBackBtn">Go Back</button>
+                <button type="submit" class="btn" id="clearHighScoreBtn">Clear High Scores</button>
+            </p>
+         
+        </div>
+    </div>
+  
+   
+    <script src="js/script.js"></script>
+</body>
