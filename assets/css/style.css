@@ -2,7 +2,7 @@
 
 body {
     background-color: rgb(250, 250, 250);
-    font-family: 'Nova Square';
+    font-family: 'Nova Square', 'sans-serif';
 }
 
 .container {
@@ -33,7 +33,7 @@ body {
     padding: 15px;
     cursor: pointer;
     font-size: large;
-    font-family: 'Nova Square';
+    font-family: 'Nova Square', 'sans-serif';
 }
 
 .btn:hover {

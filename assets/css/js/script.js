@@ -11,12 +11,12 @@ var questions = [
      correctAnswer: "a"
     },
     {
-        question: "How do you write a function in JavaScript?", 
+        question: "For strict equality comparisons we should use?", 
         answers: {
-        a: "function:myFunction()",
-        b: "function = myFunction()",
-        c: "function myFunction()",
-        d: "uh...no idea..."
+        a: "=",
+        b: "==",
+        c: "===",
+        d: "strict="
         },
         correctAnswer: "c"
         
