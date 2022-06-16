@@ -111,7 +111,7 @@ startButton.addEventListener("click", startQuiz);
 function startQuiz(){
     questionIndex = 0;
     score = 0
-    time = 180
+    time = 60
     updateCountdown();
     timer.classList.remove("hidden");
     quizTimer();
