@@ -5,7 +5,8 @@ var questions = [
     answers: {
      a: "<script>",
      b: "<javascript>",
-     c: "<js>"
+     c: "<js>",
+     d: "pizza"
     },
      correctAnswer: "a"
     },
@@ -14,7 +15,8 @@ var questions = [
         answers: {
         a: "function:myFunction()",
         b: "function = myFunction()",
-        c: "function myFunction()"
+        c: "function myFunction()",
+        d: "pizza"
         },
         correctAnswer: "c"
         
@@ -24,7 +26,8 @@ var questions = [
         answers: {
         a: "myFunction()",  
         b: "call myFunction()",
-        c: "call function myFunction()"
+        c: "call function myFunction()",
+        d: "pizza"
         },
         correctAnswer: "a"
     },
@@ -33,7 +36,8 @@ var questions = [
         answers: {
         a: "'This is a comment",
         b: "//This is a comment",
-        c: "<!--This is a comment-->"
+        c: "<!--This is a comment-->",
+        d: "pizza"
         },
         correctAnswer: "b"
     },
@@ -42,7 +46,8 @@ var questions = [
         answers: {
         a: "var colors = 'red', 'green', 'blue'",
         b: "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')",
-        c: "var colors = ['red', 'green', 'blue']"
+        c: "var colors = ['red', 'green', 'blue']",
+        d: "pizza"
         },
         correctAnswer: "c"
     },
@@ -51,7 +56,8 @@ var questions = [
         answers: {
         a: "round(7.25)",
         b: "Math.round(7.25)", 
-        c: "Math.rnd(7.25)"
+        c: "Math.rnd(7.25)",
+        d: "pizza"
         },
         correctAnswer: "b"
     },
@@ -60,7 +66,8 @@ var questions = [
         answers: {
         a: "onclick",
         b: "onchange",
-        c: "onmouseclick"
+        c: "onmouseclick",
+        d: "pizza"
         },
         correctAnswer: "a"
     },
@@ -69,7 +76,8 @@ var questions = [
         answers: {
         a: "v carName;",
         b: "variable carName;",
-        c: "var carName;"
+        c: "var carName;",
+        d: "pizza"
         },
         correctAnswer: "c"
     }
@@ -131,11 +139,13 @@ function showQuestion(index) {
         var answer1 = document.getElementById('answer1')
         var answer2 = document.getElementById('answer2')
         var answer3 = document.getElementById('answer3')
+        var answer4 = document.getElementById('answer4')
     
         question.textContent = questions[index].question
         answer1.textContent = questions[index].answers.a
         answer2.textContent = questions[index].answers.b
         answer3.textContent = questions[index].answers.c
+        answer4.textContent = questions[index].answers.d
     }  
 }
 
