@@ -1,12 +1,12 @@
 // array holding questions and answers
 var questions = [
     {
-    question: "Inside which HTML element do we put the JavaScript?",
+    question: "What does HTML stand for?",
     answers: {
-     a: "<script>",
-     b: "<javascript>",
-     c: "<js>",
-     d: "pizza"
+     a: "Hyper Text Markup Language",
+     b: "Hyper Task Market Language",
+     c: "Hyper Tool Marketing Lingo",
+     d: "pizza..."
     },
      correctAnswer: "a"
     },
@@ -16,7 +16,7 @@ var questions = [
         a: "function:myFunction()",
         b: "function = myFunction()",
         c: "function myFunction()",
-        d: "pizza"
+        d: "uh...no idea..."
         },
         correctAnswer: "c"
         
@@ -27,49 +27,39 @@ var questions = [
         a: "myFunction()",  
         b: "call myFunction()",
         c: "call function myFunction()",
-        d: "pizza"
+        d: "With a cellphone"
         },
         correctAnswer: "a"
     },
     {
-        question: "How can you add a comment in a JavaScript?",
+        question: "What does CSS stand for?",
         answers: {
-        a: "'This is a comment",
-        b: "//This is a comment",
-        c: "<!--This is a comment-->",
-        d: "pizza"
+        a: "Creative Styling Sheets",
+        b: "Cascade Style Sheets",
+        c: "Central Style Sheet",
+        d: "Cascading Style Sheets"
         },
-        correctAnswer: "b"
+        correctAnswer: "d"
     },
     {
-        question: "What is the correct way to write a JavaScript array?",
+        question: "What command is used in the terminal to figure out what branch you are in?",
         answers: {
-        a: "var colors = 'red', 'green', 'blue'",
-        b: "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')",
-        c: "var colors = ['red', 'green', 'blue']",
-        d: "pizza"
+        a: "git ls",
+        b: "pwd",
+        c: "git branch",
+        d: "git -branch"
         },
         correctAnswer: "c"
     },
     {
-        question: "How do you round the number 7.25, to the nearest integer?",
+        question: "var para = document.querySelector('p'); what does this do?",
         answers: {
-        a: "round(7.25)",
-        b: "Math.round(7.25)", 
-        c: "Math.rnd(7.25)",
-        d: "pizza"
+        a: "creates a <p> element",
+        b: "selects <p> element in the HTML document",
+        c: "ignores all <p> elements",
+        d: "p is for pizza..."
         },
         correctAnswer: "b"
-    },
-    {
-        question: "Which event occurs when the user clicks on an HTML element?",
-        answers: {
-        a: "onclick",
-        b: "onchange",
-        c: "onmouseclick",
-        d: "pizza"
-        },
-        correctAnswer: "a"
     },
     {
         question: "How do you declare a JavaScript variable?",
@@ -77,14 +67,14 @@ var questions = [
         a: "v carName;",
         b: "variable carName;",
         c: "var carName;",
-        d: "pizza"
+        d: "all of the above"
         },
         correctAnswer: "c"
     }
 ]
 var score = 0;
 var questionIndex = 0;
-var time = 180;
+var time = 60;
 var intervalId = 180;
 var initialsElement = document.getElementById('initials');
 
@@ -261,6 +251,6 @@ function submitAnswer(button){
     if (time > 0) {
         time--;
     } else {
-        countdownEl.innerHTML = "Time's Up";
+        countdownEl.innerHTML = "Out of time!";
     }
    }
