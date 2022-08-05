@@ -115,11 +115,8 @@ function startQuiz(){
 // show question 
 function showQuestion(index) {
     if( index > questions.length - 1){
-        clearInterval(intervalId);
-        quizContainer.classList.add("hidden");
-        resultsText.textContent = ("Quiz Complete. Your score is " + score);
-        initialInput.classList.remove("hidden");
-        timer.classList.add("hidden");
+        endQuiz()
+
        
        
     } else {
@@ -240,6 +237,13 @@ function submitAnswer(button){
   function quizTimer() {
    intervalId = setInterval(updateCountdown, 1000);
   }
+  function endQuiz(){
+    clearInterval(intervalId);
+    quizContainer.classList.add("hidden");
+    resultsText.textContent = ("Quiz Complete. Your score is " + score);
+    initialInput.classList.remove("hidden");
+    timer.classList.add("hidden");
+  }
 
   function updateCountdown() {
     const countdownEl = document.getElementById('time');
@@ -251,6 +255,7 @@ function submitAnswer(button){
     if (time > 0) {
         time--;
     } else {
+        endQuiz()
         countdownEl.innerHTML = "Out of time!";
     }
    }
